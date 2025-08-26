@@ -1,0 +1,15 @@
+@prefix : <http://example.org/onto#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:User a owl:Class .
+:Product a owl:Class .
+:Category a owl:Class .
+
+:inCategory a owl:ObjectProperty ; rdfs:domain :Product ; rdfs:range :Category .
+:name a owl:DatatypeProperty ; rdfs:range xsd:string .
+:price a owl:DatatypeProperty ; rdfs:domain :Product ; rdfs:range xsd:decimal .
+:rating a owl:DatatypeProperty ; rdfs:domain :Product ; rdfs:range xsd:decimal .
+:reviewCount a owl:DatatypeProperty ; rdfs:domain :Product ; rdfs:range xsd:integer .
