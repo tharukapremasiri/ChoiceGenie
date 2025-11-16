@@ -1,5 +1,5 @@
-# recommender
-Choice Genie
+# Choice Genie
+Recommender
 
 
 # 🛒 Ontology-Based & ML-Hybrid E-Commerce Recommendation System (Semantic + ML)
